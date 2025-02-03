@@ -1,0 +1,8 @@
+[[language]]
+name = "python"
+language-servers = [ "pyright" ]
+
+[language-server.pyright]
+command = "/home/node_modules/.bin/pyright-langserver"
+args = [ "--stdio" ]
+config = { python = { analysis = { useLibraryCodeForTypes = false, diagnosticMode = "openFilesOnly", typeCheckingMode = "strict" } } }
